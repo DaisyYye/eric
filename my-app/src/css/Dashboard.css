@@ -1,0 +1,196 @@
+
+/* --- Global Dashboard Typography --- */
+.dashboard {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #333; /* Dark grey for general text */
+  line-height: 1.6;
+}
+
+mark {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #e9e5dd;
+  padding: 0 5px; /* Optional: add a little padding */
+}
+
+
+h2, h3 {
+  color: rgb(81, 93, 211); /* Echoing the Footer Blue */
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; border-bottom: 2px solid #f25a17; display: inline-block; padding-bottom: 5px; }
+
+/* --- Hero Section (Top) --- */
+.hero-container {
+  /* Image Setup */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Spacing */
+  padding: 60px 20px;
+  color: white; /* Text inside hero is white to contrast with background */
+}
+
+/* Wrapper to hold text and image side-by-side */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+/* Hero Text Box Styling */
+.hero-text-box {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay to make text readable on image */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.hero-title {
+  color: white; /* Override blue for hero section */
+  margin-top: 0;
+  border-bottom: 4px solid #f25a17; /* Orange accent */
+  display: inline-block;
+}
+
+.hero-list {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.hero-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 3px solid #f25a17; /* Orange accent bars */
+}
+
+.hero-bio h3 {
+  color: #f25a17; /* Orange for subtitles in dark section */
+  border-bottom: none;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* --- Main Content Area (White Background) --- */
+.main-content {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Teaching Section */
+.teaching-section {
+  margin-bottom: 60px;
+}
+
+.styled-list li {
+  margin-bottom: 8px;
+}
+
+.highlight-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(81, 93, 211);
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* --- Services Section Layout --- */
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background-color: #f9f9f9; /* Light grey background for separation */
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 5px solid rgb(81, 93, 211);
+}
+
+.services-text {
+  flex: 1;
+}
+
+.matcha-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-content, .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo, .matcha-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .hero-text-box {
+    width: 100%;
+  }
+}
+
+/* --- Hero Bio Section --- */
+.hero-bio {
+  padding: 40px;
+  border-radius: 12px; /* Smooth corners */
+  max-width: 800px;    /* Prevents text from stretching too wide */
+  margin: 0 auto;      /* Centers the block if it's the only thing */
+  
+  /* Text Styling */
+  color: #e6e6e6;      /* Light Grey/White for paragraph text (High Contrast) */
+  line-height: 1.8;    /* Improves readability of long text */
+}
+
+/* Title Styling */
+.hero-bio h3 {
+  color: #ffffff;      /* Pure white as requested */
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #f25a17; /* Keeps your orange accent theme */
+  display: inline-block;
+}
+
+
+/* --- University Logo Styling --- */
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center;    /* Centers them horizontally relative to the container */
+  gap: 20px;              /* Adds space between the top and bottom logo */
+  margin-top: 30px;
+}
+
+/* Optional: Ensure they don't look too big when stacked */
+.uni-logo {
+  height: 180px; 
+  width: auto;
+  object-fit: contain;
+}

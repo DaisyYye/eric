@@ -1,0 +1,89 @@
+/* Container styling */
+.footer-container {
+  background-color: rgb(81, 93, 211);
+  color: white;
+  padding: 40px 20px 60px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Orange decorative line */
+.footer-line {
+  background-color: #f25a17;
+  height: 2px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+/* Layout for content */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Branding Section */
+.footer-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+/* Contact Section */
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cta-text {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Link Styling */
+.footer-info a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.footer-info a:hover {
+  border-bottom: 1px solid white;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  color: #f25a17; /* Logo color requested */
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .footer-info {
+    text-align: right;
+  }
+}

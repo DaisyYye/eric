@@ -1,0 +1,81 @@
+/* Container styling matches Footer background and font */
+.header {
+  background-color: rgb(81, 93, 211);
+  color: white;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  /* Echoing the footer's orange decorative line as a bottom border */
+  border-bottom: 4px solid #f25a17; 
+  padding: 20px;
+  /* Ensures header stays on top if content scrolls */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Layout for content - matches .footer-content width constraints */
+.nav {
+  display: flex;
+  justify-content: flex-end; /* Aligns links to the right */
+  align-items: center;
+  max-width: 980px; /* Matches footer content width */
+  margin: 0 auto;   /* Centers the nav block */
+  gap: 30px;        /* Replaces the "|" character with proper space */
+}
+
+/* Link Styling */
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700; /* Bold like .footer-name */
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Animated Underline Effect (Orange) */
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f25a17; /* Matches .footer-line */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* --- Responsive Text Handling --- */
+/* By default (Mobile), hide desktop text */
+.desktop-text {
+  display: none;
+}
+
+/* Show mobile text */
+.mobile-text {
+  display: inline;
+}
+
+/* Desktop Layout (> 800px) */
+@media (min-width: 800px) {
+  .header {
+    padding: 30px 40px; /* More breathing room on desktop */
+  }
+
+  .desktop-text {
+    display: inline;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+}
