@@ -11,47 +11,67 @@ function Dashboard() {
   return (
     <div className="dashboard">
       
-      {/* --- HERO SECTION --- */}
-      {/* Container with background image */}
-      <div 
-        className="hero-container" 
-        style={{ backgroundImage: `url(${backgroundImage1})` }}
-      >
-        <div className="hero-content">
-          
-          {/* Left side: Text */}
-          <div className="hero-text-box">
-            <h2 className="hero-title">Eric Qin</h2>
-            <ul className="hero-list">
-              <li>B.VisSci / M.ClinOptom Early Exit @ UNSW </li>
-              <li>Doctor of Medicine @ UniMelb</li>
-              <li>99.85 ATAR, State Rank #7 in Maths Ext 1</li>
-              <li>99 Percentile GAMSAT</li>
-            </ul>
-            <h3 className="hero-title">Services I offer:</h3>
-            <ul className="hero-list">
-              <li>
-                High School Homework Help (Chemistry, Physics, Biology, Math Ext 1 & 2)
-              </li>
-              <li>
-                GAMSAT Tutoring (S2 & S3)
-              </li>
-              <li>
-                Medical Interview Preparation
-              </li>
-            </ul>
-          </div>
+{/* --- HERO SECTION --- */}
+<div 
+  className="hero-container" 
+  style={{ backgroundImage: `url(${backgroundImage1})` }}
+>
+  <div className="hero-content">
+    
+    {/* Left side: Text */}
+    <div className="hero-text-box">
+      
+      {/* 1. Name & Primary Title */}
+      <h1 className="hero-name">Eric Qin</h1>
+      <p className="hero-subtitle">
+        Doctor of Medicine Student @ UniMelb <br/>
+        <span className="sub-detail">B.VisSci / M.ClinOptom Early Exit @ UNSW</span>
+      </p>
 
-          {/* Right side: Image */}
-          <img className="profile-photo" src={ericPhoto} alt="Eric Qin" />
+      {/* 2. Key Achievements (The "Hook") */}
+      <div className="hero-stats">
+        <div className="stat-item">
+          <strong>99.85</strong> <span>ATAR</span>
+        </div>
+        <div className="stat-line"></div> {/* Vertical Divider */}
+        <div className="stat-item">
+          <strong>99th</strong> <span>Percentile GAMSAT</span>
+        </div>
+        <div className="stat-line"></div>
+        <div className="stat-item">
+          <strong>Rank #7</strong> <span>NSW Maths Ext 1</span>
         </div>
       </div>
+
+      <hr className="hero-divider" />
+
+      {/* 3. Services List */}
+      <h3 className="services-title">Specialised Tutoring In:</h3>
+      <ul className="hero-service-list">
+        <li>
+          High School Chemistry, Physics, Biology
+        </li>
+        <li>
+          Mathematics Extension 1 & 2
+        </li>
+        <li>
+          GAMSAT (Section 2 & 3)
+        </li>
+        <li>
+          Medical Interview Preparation
+        </li>
+      </ul>
+    </div>
+
+    {/* Right side: Image */}
+    <img className="profile-photo" src={ericPhoto} alt="Eric Qin" />
+  </div>
+</div>
 
             <div 
         className="hero-container" 
         style={{ backgroundImage: `url(${backgroundImage2})` }}
       >
-
 
         
         <div className="hero-content">

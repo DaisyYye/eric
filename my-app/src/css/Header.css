@@ -13,14 +13,13 @@
   box-sizing: border-box;
 }
 
-/* Layout for content - matches .footer-content width constraints */
+/* Layout for content */
 .nav {
   display: flex;
   justify-content: flex-end; /* Aligns links to the right */
   align-items: center;
-  max-width: 980px; /* Matches footer content width */
-  margin: 0 auto;   /* Centers the nav block */
-  gap: 30px;        /* Replaces the "|" character with proper space */
+  width: 100%;       /* Forces nav to span the full width of the screen */
+  gap: 30px;
 }
 
 /* Link Styling */

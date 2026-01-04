@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="footer-info">
           <p className="cta-text">
 
-            Interested for a trial? Reach out here, or send me an SMS</p>
+            Interested for a trial? Reach out here, or send me an SMS.</p>
           
           <div className="contact-details">
             <p>
