@@ -14,8 +14,8 @@ function Header() {
         
         {/* Link 2: Toggles between 'More' and 'More About Services' via CSS */}
         <Link to="/services">
-          <span className="mobile-text">More</span>
-          <span className="desktop-text">More About Services</span>
+          <span className="mobile-text">Services</span>
+          <span className="desktop-text">My Services</span>
         </Link>
 
       </nav>
