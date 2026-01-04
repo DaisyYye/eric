@@ -107,17 +107,47 @@ function Dashboard() {
       {/* --- MAIN CONTENT AREA --- */}
       <div className="main-content">
         
-        {/* Teaching Section */}
-        <section className="teaching-section">
-          <h3>My teaching</h3>
-          <p>I base my teachings off 3 key ideas:</p>
-          <ol className="styled-list">
-            <li>Building strong conceptual understanding</li>
-            <li>Providing practice questions to reinforce understanding</li>
-            <li>Adapt to mistakes in order to grow and improve</li>
-          </ol>
-          <div className="highlight-text">Concepts • Practice • Adaptation</div>
-        </section>
+{/* --- TEACHING SECTION --- */}
+<section className="teaching-section">
+  
+  {/* Section Header */}
+  <div className="teaching-header">
+    <h3>My Teaching Philosophy</h3>
+    <p>Success isn't accidental. It follows a proven three-step cycle.</p>
+  </div>
+
+  {/* The 3-Step Grid */}
+  <div className="teaching-grid">
+    
+    {/* Step 1 */}
+    <div className="method-card">
+      <div className="step-number">01</div>
+      <div className="card-content">
+        <h4>Concepts</h4>
+        <p>Building strong, intuitive conceptual understanding from the ground up.</p>
+      </div>
+    </div>
+
+    {/* Step 2 */}
+    <div className="method-card">
+      <div className="step-number">02</div>
+      <div className="card-content">
+        <h4>Practice</h4>
+        <p>Providing targeted practice questions to reinforce and solidify new knowledge.</p>
+      </div>
+    </div>
+
+    {/* Step 3 */}
+    <div className="method-card">
+      <div className="step-number">03</div>
+      <div className="card-content">
+        <h4>Adaptation</h4>
+        <p>Analyzing mistakes to adapt strategies and ensure continuous growth.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
         {/* Services Section */}
         <div className="services-container">
