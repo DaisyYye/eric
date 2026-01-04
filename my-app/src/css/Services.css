@@ -1,0 +1,164 @@
+/* --- Global Page Styling --- */
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Page Title */
+.page-title {
+  color: rgb(81, 93, 211);
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* --- Services Grid Layout --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+/* Individual Service Card */
+.service-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Soft shadow */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid rgb(81, 93, 211); /* Blue top border */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Lifts up on hover */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  color: rgb(81, 93, 211);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  line-height: 1.6;
+  color: #555;
+  flex-grow: 1; /* Pushes pricing to the bottom */
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Pricing Section inside Card */
+.pricing-box {
+  background-color: #f4f6ff; /* Very light blue background */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.pricing-box h4 {
+  color: #f25a17; /* Orange accent */
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-list li:last-child {
+  border-bottom: none;
+}
+
+/* --- Why Choose Me Section --- */
+.why-choose-section {
+  background-color: #fafafa;
+  padding: 60px 40px;
+  border-radius: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  color: rgb(81, 93, 211);
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.reason-block {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.reason-content h3 {
+  color: #f25a17; /* Orange Highlight */
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.reason-content p {
+  line-height: 1.7;
+}
+
+.material-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.material-list li {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Stack cards on mobile */
+  }
+  
+  .reason-block {
+    flex-direction: column;
+  }
+}

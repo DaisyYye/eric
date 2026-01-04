@@ -1,128 +1,131 @@
+
+import './css/Services.css'; 
+
 function Services() {
   return (
-    <div>
-      <h2>Services</h2>
-
-      {/* --- Service 1 --- */}
-      <h3>HS HW Help</h3>
-      <p>
-        Homework Help catering for years 7 to 12. Specialises in chemistry,
-        physics, biology, mathematics extension 1 and 2. What all these subjects
-        have in common is a STEM base that demands strong conceptual
-        understanding, theoretical reasoning, and the capacity to prime this
-        forward.
+    <div className="services-page">
+      
+      {/* Header Section */}
+      <h2 className="page-title">Services</h2>
+      <p className="page-intro">
+        I provide the following services for private tutoring. I only have limited spots for each, 
+        and so it is important to reach out early. My focus for tutoring is centred around 
+        strong conceptual understanding, followed by practice to reinforce this foundation.
       </p>
-      <p>
-        Materials include trial papers, specific topic questions, difficult
-        questions. But due to the nature of my homework help sessions, I highly
-        recommend students bring their own materials and difficult questions.
-      </p>
-      <h4>Pricing:</h4>
-      <ul>
-        <li>$60/h - Year 10 and Under</li>
-        <li>$70/h - Year 11 and Year 12 excl. Ext 2</li>
-        <li>$80/h - Year 12 incl. Ext 2</li>
-      </ul>
 
-      <hr />
+      {/* Grid Layout for Services Cards */}
+      <div className="services-grid">
+        {/* --- Card 3: HS Help --- */}
+        <div className="service-card">
+          <h3>HS Homework Help</h3>
+          <p>
+            Catering for years 7 to 12. Specialises in Chemistry, Physics, Biology, Math Ext 1 & 2. 
+            All these STEM subjects demand strong conceptual understanding and theoretical reasoning.
+            <br /><br />
+            Students are welcomed to bring their own materials and difficult questions to sessions.
+          </p>
+          <div className="pricing-box">
+            <h4>Pricing</h4>
+            <ul className="pricing-list">
+              <li><span>Year 10 & Under</span> <strong>$60/h</strong></li>
+              <li><span>Year 11-12 (excl. Ext 2)</span> <strong>$70/h</strong></li>
+              <li><span>Year 12 (incl. Ext 2)</span> <strong>$80/h</strong></li>
+            </ul>
+          </div>
+        </div>
 
-      {/* --- Service 2 --- */}
-      <h3>GAMSAT Tutoring (S2 and S3)</h3>
-      <p>
-        With a GAMSAT S2 score of 75 and a S3 score of 91, I was able to achieve
-        an overall GAMSAT within the 99th percentile. But this came with a
-        strong conceptual understanding, one that simply cannot be attained
-        through textbooks.
-      </p>
-      <p>
-        Materials include S2 and S3 practice/prep materials, as well as GAMSAT
-        mocks (very limited).
-      </p>
-      <h4>Pricing:</h4>
-      <ul>
-        <li>$120/h - S2 or S3 tutoring (tailored and flexible)</li>
-        <li>$60/paper - S2 Essay Marking/Feedback</li>
-      </ul>
+        {/* --- Card 1: GAMSAT --- */}
+        <div className="service-card">
+          <h3>GAMSAT Tutoring (S2 & S3)</h3>
+          <p>
+            With a GAMSAT S2 score of 75 and a S3 score of 91, I achieved an overall GAMSAT 
+            within the 99th percentile. This came with a strong conceptual understanding 
+            that simply cannot be attained through textbooks alone. <br /><br />
+            Materials include S2 and S3 practice/prep materials, as well as limited GAMSAT mocks.
+          </p>
+          <div className="pricing-box">
+            <h4>Pricing</h4>
+            <ul className="pricing-list">
+              <li><span>Tutoring (Tailored)</span> <strong>$120/h</strong></li>
+              <li><span>Essay Marking</span> <strong>$60/paper</strong></li>
+            </ul>
+          </div>
+        </div>
 
-      <hr />
+        {/* --- Card 2: Interview --- */}
+        <div className="service-card">
+          <h3>Interview Preparation</h3>
+          <p>
+Interview preparation can be daunting, and knowing ethical guidelines sometimes isn't enough to be unique.  <br />
 
-      {/* --- Service 3 --- */}
-      <h3>Interview Preparation</h3>
-      <p>
-        Interview preparation can be daunting, and knowing ethical guidelines
-        sometimes isn't enough to be unique. Coming from 2 years of personal
-        failure, and 3 years of individual growth, I hope I can share some
-        insightful information.
+            It took me 3 years of individual growth to understand 
+            what it takes to deliver unique responses to difficult questions and ethical dilemmas, until I received my uni melb offer. I hope to share my experience and help you succeed too.
+            <br /><br />
+            Materials: Over 40 mocks tailored for UNSW, UoN, WSU, UniMelb, UQ, Bond, plus panel and MMI questions.
+          </p>
+          <p className="disclaimer">
+            (Disclaimer: Materials are original and created by me.)
+          </p>
+          <div className="pricing-box">
+            <h4>Pricing</h4>
+            <ul className="pricing-list">
+              <li><span>Consultation</span> <strong>$150/h</strong></li>
+              <li><span>1x full Mock & Feedback</span> <strong>$150</strong></li>
+              <li><span>2x full Mock & Feedback</span> <strong>$275</strong></li>
+              <li><span>3x full Mock & Feedback</span> <strong>$350</strong></li>
+            </ul>
+          </div>
+        </div>
 
-        Interviewing at numerous institutions in the past, and being engaged in individual
-growth, I understand what it takes to deliver not just a strong response, but a truly
-unique response, especially for difficult questions, and ethical dilemmas.
-      </p>
-      <p>
-        As for materials, I have over 40 mocks tailored for different medical
-        universities, such as UNSW, UoN, WSU, UniMelb, UQ, Bond as well as
-        specific panel questions, and specific MMI scenario questions.
-      </p>
-      <p>
-        <em>
-          (Disclaimer: none of the material are official material, all are
-          original and made by me)
-        </em>
-      </p>
-      <h4>Pricing:</h4>
-      <ul>
-        <li>$150/h - Interview Help Advice</li>
-        <li>$175/session - Interview Mock and Feedback</li>
-        <li>$250/session - 2x Interview Mock and Feedback</li>
-        <li>$300/session - 3x Interview Mock and Feedback</li>
-      </ul>
 
-      <hr />
+      </div>
 
       {/* --- Why Choose Me Section --- */}
-      <h2>Why Choose Me?</h2>
+      <div className="why-choose-section">
+        <h2 className="section-heading">Why Choose Me?</h2>
 
-      <h3>Concepts: A strong base builds skyscrapers</h3>
-      <p>
-        In year 9, I received my rank of 198 out of 210 students. What made me
-        jump to rank 105 within just a year was my desire to understand
-        concepts. Understanding basic ideas allowed me to prime them forward.
-        Theoretical, hypothetical, counter-factual reasoning in mathematics and
-        science steadily followed, and with only simple ideas, I was able to
-        derive identities with ease, and optimise my problem solving during
-        exams. By the end of year 12, I was rank 9, coming rank 2 in mathematics
-        extension 1, rank 3 in mathematics extension 2, rank 4 in chemistry and
-        rank 9 in physics.
-      </p>
+        <div className="reason-block">
+          <div className="reason-content">
+            <h3>Concepts: A strong base builds skyscrapers</h3>
+            <p>
+              In year 9, my rank was 198/210. By year 12, I was rank 9, achieving 99.85 ATAR. 
+              The secret was a desire to understand concepts. Simple ideas allowed me to derive 
+              identities with ease and optimise problem-solving. This approach led me to Rank 2 
+              in Math Ext 1, Rank 3 in Ext 2, and top ranks in sciences.
+            </p>
+          </div>
+        </div>
 
-      <h3>Practice: Practice makes perfect</h3>
-      <p>
-        With concepts, it is the continuous practice that reinforces them like
-        glue. Having sufficient practice questions with great variety is
-        necessary to consolidate understanding and make conceptual learning
-        meaningful. Fortunately, through my studies, I have numerous sets of
-        questions, such as:
-      </p>
-      <ul>
-        <li>High School Trial Papers</li>
-        <li>Specific Topic Questions</li>
-        <li>Difficult Questions</li>
-        <li>GAMSAT Materials</li>
-        <li>GAMSAT Mock Tests</li>
-        <li>Interview Prep Materials</li>
-        <li>Over 40 Interview Mocks</li>
-      </ul>
+        <div className="reason-block">
+          <div className="reason-content">
+            <h3>Practice: Practice makes perfect</h3>
+            <p>
+              Continuous practice reinforces concepts like glue. Through my studies, I have amassed 
+              numerous sets of questions to help consolidate understanding:
+            </p>
+            <ul className="material-list">
+              <li>High School Trial Papers</li>
+              <li>Specific Topic Questions</li>
+              <li>Difficult Challenge Questions</li>
+              <li>GAMSAT Materials & Mocks</li>
+              <li>Over 40 Interview Mocks</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Adapt: Now... I understand it</h3>
-      <p>
-        If we trip and slip down a mountain, we only see how far we fall. But
-        why don't we look at how far we've risen? I've tried for medicine in
-        high school, and my first year, but only succeeding at the very end.
-        Recovering from failure isn't simply just trying the same path again,
-        but sometimes about taking a new pathway. For me, it was always about
-        trying something different, and being open to new experiences in the
-        now, rather than worrying about the future.
-      </p>
+        <div className="reason-block">
+          <div className="reason-content">
+            <h3>Adapt: Now... I understand it</h3>
+            <p>
+              If we trip and slip down a mountain, we only see how far we fall. But why don't we 
+              look at how far we've risen? Recovering from failure isn't simply trying the same 
+              path again, but often taking a new pathway. For me, it was always about trying 
+              something different and being open to new experiences.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }
