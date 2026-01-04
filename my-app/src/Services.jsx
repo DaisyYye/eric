@@ -97,7 +97,6 @@ strong conceptual understanding, followed by tailored practice to reinforce this
           <div className="reason-card">
             <div className="reason-icon">💡</div>
             <h3>Concepts First</h3>
-            <p className="reason-tagline">A strong base builds skyscrapers.</p>
             <p>
               In year 9, I ranked 198/210. By year 12, I was rank 9 with a 99.85 ATAR. 
               The secret wasn't mindless study; it was a deep desire to understand concepts. 
@@ -109,7 +108,6 @@ strong conceptual understanding, followed by tailored practice to reinforce this
           <div className="reason-card">
             <div className="reason-icon">🏋️‍♂️</div>
             <h3>Strategic Practice</h3>
-            <p className="reason-tagline">Practice makes perfect reinforcement.</p>
             <p>
               Continuous practice reinforces concepts like glue. I provide extensive resources to consolidate understanding:
             </p>
@@ -126,7 +124,6 @@ strong conceptual understanding, followed by tailored practice to reinforce this
           <div className="reason-card">
             <div className="reason-icon">🌱</div>
             <h3>Adapt & Overcome</h3>
-            <p className="reason-tagline">"Now... I understand it"</p>
             <p>
               I only succeeded at getting into medicine at the very end after initial failures. 
               Recovering isn't just trying the same path again; it's about trying something different. 
