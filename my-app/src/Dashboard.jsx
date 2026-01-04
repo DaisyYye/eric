@@ -6,6 +6,7 @@ import matchaImage from './assets/matcha.jpeg';
 import unsw from './assets/unsw.png';
 import unimelb from './assets/unimelb.svg';
 import './css/Dashboard.css';
+import { Link } from 'react-router-dom';
 
 function Dashboard() {
   return (
@@ -35,30 +36,30 @@ function Dashboard() {
         </div>
         <div className="stat-line"></div> {/* Vertical Divider */}
         <div className="stat-item">
-          <strong>99th</strong> <span>Percentile GAMSAT</span>
+          <strong>Rank #7</strong> <span>NSW Maths Ext 1</span>
         </div>
         <div className="stat-line"></div>
         <div className="stat-item">
-          <strong>Rank #7</strong> <span>NSW Maths Ext 1</span>
+          <strong>99th</strong> <span>Percentile GAMSAT</span>
         </div>
       </div>
 
       <hr className="hero-divider" />
 
       {/* 3. Services List */}
-      <h3 className="services-title">Specialised Tutoring In:</h3>
+      <h3 className="services-title">Specialised Tutoring:</h3>
       <ul className="hero-service-list">
         <li>
-          High School Chemistry, Physics, Biology
-        </li>
-        <li>
-          Mathematics Extension 1 & 2
+          Maths, Chemistry, Physics
         </li>
         <li>
           GAMSAT (Section 2 & 3)
         </li>
         <li>
           Medical Interview Preparation
+        </li>
+        <li>
+          Mock Interviews
         </li>
       </ul>
     </div>
@@ -78,20 +79,19 @@ function Dashboard() {
             <div className="hero-bio">
               <h3>About me</h3>
               <p> 
-                 <mark> 
+        
                 I understand what it is like to struggle with understanding confusing ideas. <br />
                 <br />
                 Studying secondary education at the Sydney Boys High School, I was never one who was strong at academics. 
                 I would waste my time playing video games. In year 9, my rank was 198/210. But by year 12, I was rank 9, 
-                achieving 99.85 ATAR, and state rank #7 in maths extension 1.  </mark>
+                achieving 99.85 ATAR, and state rank #7 in maths extension 1.  
               </p>
-              <p>
-                <mark>What changed?<br />
+              <p>What changed?<br />           <br />
                 
                 The focus. I saw how concepts that I've learnt could connect seamlessly with other ideas. 
                 This development of conceptual understanding extends beyond just mathematics, but for almost all aspects of life.
                 At UNSW, I studied BVisSci/MClinOptom for 3 years, before taking early exit with a final WAM of 92. 
-                I am currently studying Doctor of Medicine at the University of Melbourne, with a 99 percentile GAMSAT.  </mark>
+                I am currently studying Doctor of Medicine at the University of Melbourne, with a 99 percentile GAMSAT.  
               </p>
           </div>
 
@@ -155,7 +155,7 @@ function Dashboard() {
           <div className="services-text">
             <h3>My Services:</h3>
             <p>
-              I am in fairly high demand, and I only offer 11 spots for tutoring.
+              I am in fairly high demand, and I only offer 10 spots for tutoring.
               The available spots I have are listed below:
             </p>
             <ul className="styled-list">
@@ -163,7 +163,9 @@ function Dashboard() {
               <li>GAMSAT (S2 and S3) -- <strong>3 spots</strong></li>
               <li>Interview Preparation -- <strong>2 spots</strong></li>
             </ul>
-            <p className="note-text">For more information like prices, please visit the Services page.</p>
+<p className="note-text">
+  For more information, please visit the <Link to="/services" className="text-link">Services page</Link>.
+</p>
           </div>
 
           {/* Right Side: Matcha Image */}
