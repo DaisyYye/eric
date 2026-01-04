@@ -2,7 +2,7 @@
 .services-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 20px 80px; /* Added bottom padding for spacing */
   font-family: 'Helvetica', 'Arial', sans-serif;
   color: #333;
 }
@@ -13,76 +13,94 @@
   font-size: 3rem;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .page-intro {
   text-align: center;
   max-width: 800px;
   margin: 0 auto 60px auto;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   color: #555;
+}
+
+.page-intro strong {
+  color: rgb(81, 93, 211);
 }
 
 /* --- Services Grid Layout --- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Slightly wider min-width */
   gap: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 100px; /* More space before the next section */
+  align-items: stretch; /* Ensures all cards in a row are same height */
 }
 
 /* Individual Service Card */
 .service-card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Soft shadow */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   padding: 30px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 5px solid rgb(81, 93, 211); /* Blue top border */
+  border-top: 6px solid rgb(81, 93, 211);
+  height: 100%; /* Ensures card takes full height of grid row */
 }
 
 .service-card:hover {
-  transform: translateY(-5px); /* Lifts up on hover */
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Wrapper for content above pricing */
+.card-description-wrapper {
+  flex-grow: 1; /* THIS is the key to pushing pricing boxes down evenly */
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card h3 {
   color: rgb(81, 93, 211);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 0;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .service-card p {
   line-height: 1.6;
   color: #555;
-  flex-grow: 1; /* Pushes pricing to the bottom */
+  margin-bottom: 20px;
 }
 
 .disclaimer {
   font-size: 0.85rem;
   color: #999;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: -10px; /* Pull it closer to paragraphs above */
+  margin-bottom: 20px;
 }
 
 /* Pricing Section inside Card */
 .pricing-box {
-  background-color: #f4f6ff; /* Very light blue background */
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+  background-color: #f4f6ff;
+  padding: 25px;
+  border-radius: 10px;
+  /* Ensure it sits at bottom even if text is short */
+  margin-top: auto; 
 }
 
 .pricing-box h4 {
-  color: #f25a17; /* Orange accent */
-  margin: 0 0 10px 0;
+  color: #f25a17;
+  margin: 0 0 15px 0;
   text-transform: uppercase;
   font-size: 0.9rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
 .pricing-list {
@@ -92,73 +110,173 @@
 }
 
 .pricing-list li {
-  padding: 8px 0;
-  border-bottom: 1px solid #e0e0e0;
-  font-size: 0.95rem;
+  padding: 12px 0; /* A bit more breathing room */
+  border-bottom: 1px solid #dce3ff; /* Subtler blueish gray border */
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pricing-list li:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
-/* --- Why Choose Me Section --- */
+.pricing-list li strong {
+  color: rgb(81, 93, 211);
+  font-size: 1.1rem;
+}
+
+/* --- REDESIGNED "Why Choose Me" Section --- */
 .why-choose-section {
-  background-color: #fafafa;
-  padding: 60px 40px;
+  /* Changed to dark blue background for high impact */
+  background-color: rgb(81, 93, 211);
+  color: white;
+  padding: 80px 40px 60px;
   border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(81, 93, 211, 0.3);
+  text-align: center;
 }
 
 .section-heading {
-  text-align: center;
-  color: rgb(81, 93, 211);
-  font-size: 2.5rem;
-  margin-bottom: 50px;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 800;
 }
 
-.reason-block {
-  margin-bottom: 40px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+/* Grid for the 3 reasons */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+  margin-bottom: 60px;
 }
 
-.reason-content h3 {
-  color: #f25a17; /* Orange Highlight */
-  margin-top: 0;
-  font-size: 1.4rem;
+.reason-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px); /* Subtle frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.reason-content p {
+.reason-card:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.reason-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  /* Optional: replace emojis with SVGs later */
+}
+
+.reason-card h3 {
+  color: rgb(255, 118, 60); /* Orange highlight for titles */
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.reason-tagline {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.reason-card p {
   line-height: 1.7;
+  color: #ffffff; /* Changed from #e0e0e0 to White */
+  font-size: 1rem; /* Increased slightly from 0.95rem */
+  font-weight: 400; /* Ensures it isn't too thin */
 }
 
+/* Material list styling within the dark section */
 .material-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 0;
   list-style: none;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .material-list li {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.15); /* Changed to white tint for better contrast */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6px 12px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 1.0rem; /* Increased size slightly */
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
+/* --- CTA Container --- */
+.cta-container {
+  background-color: white;
+  color: #333;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 0 auto; /* Center horizontally */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cta-container h3 {
+  color: rgb(81, 93, 211);
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.cta-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* The main CTA Button */
+.cta-button.main-cta {
+  display: inline-block;
+  background-color: #f25a17; /* Orange */
+  color: white;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(242, 90, 23, 0.4);
+}
+
+.cta-button.main-cta:hover {
+  background-color: #d94e10; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight grow */
+  box-shadow: 0 10px 25px rgba(242, 90, 23, 0.6);
+}
+
+
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .services-grid {
-    grid-template-columns: 1fr; /* Stack cards on mobile */
+@media (max-width: 900px) {
+  .reasons-grid {
+    grid-template-columns: 1fr; /* Stack reasons on smaller screens */
+    text-align: center;
   }
   
-  .reason-block {
-    flex-direction: column;
+  .material-list {
+    justify-content: center;
+  }
+
+  .why-choose-section {
+    padding: 60px 20px;
+  }
+  
+  .section-heading {
+    font-size: 2.2rem;
   }
 }

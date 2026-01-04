@@ -23,9 +23,13 @@ function Dashboard() {
           <div className="hero-text-box">
             <h2 className="hero-title">Eric Qin</h2>
             <ul className="hero-list">
-              <li>Bachelor of Vision Science @ UNSW</li>
-              <li>BVisSci/MClinOptom Early Exit</li>
+              <li>B.VisSci / M.ClinOptom Early Exit @ UNSW </li>
               <li>Doctor of Medicine @ UniMelb</li>
+              <li>99.85 ATAR, State Rank #7 in Maths Ext 1</li>
+              <li>99 Percentile GAMSAT</li>
+            </ul>
+            <h3 className="hero-title">Services I offer:</h3>
+            <ul className="hero-list">
               <li>
                 High School Homework Help (Chemistry, Physics, Biology, Math Ext 1 & 2)
               </li>
@@ -47,11 +51,14 @@ function Dashboard() {
         className="hero-container" 
         style={{ backgroundImage: `url(${backgroundImage2})` }}
       >
+
+
+        
         <div className="hero-content">
             <div className="hero-bio">
               <h3>About me</h3>
               <p> 
-                 <mark> From the Dust:  <br />
+                 <mark> 
                 I understand what it is like to struggle with understanding confusing ideas. <br />
                 <br />
                 Studying secondary education at the Sydney Boys High School, I was never one who was strong at academics. 
@@ -59,9 +66,9 @@ function Dashboard() {
                 achieving 99.85 ATAR, and state rank #7 in maths extension 1.  </mark>
               </p>
               <p>
-                 <mark>What changed? The focus. <br />
+                <mark>What changed?<br />
                 
-                I saw how concepts that I've learnt could connect seamlessly with other ideas. 
+                The focus. I saw how concepts that I've learnt could connect seamlessly with other ideas. 
                 This development of conceptual understanding extends beyond just mathematics, but for almost all aspects of life.
                 At UNSW, I studied BVisSci/MClinOptom for 3 years, before taking early exit with a final WAM of 92. 
                 I am currently studying Doctor of Medicine at the University of Melbourne, with a 99 percentile GAMSAT.  </mark>
