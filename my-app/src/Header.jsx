@@ -8,7 +8,7 @@ function Header() {
         
         {/* Link 1: Toggles between 'H' and 'Home' via CSS */}
         <Link to="/">
-          <span className="mobile-text">H</span>
+          <span className="mobile-text">Home</span>
           <span className="desktop-text">Home</span>
         </Link>
         
