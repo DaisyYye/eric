@@ -78,21 +78,15 @@ function Dashboard() {
         <div className="hero-content">
             <div className="hero-bio">
               <h3>About me</h3>
-              <p> 
-        
-                I understand what it is like to struggle with understanding confusing ideas. <br />
-                <br />
-                Studying secondary education at the Sydney Boys High School, I was never one who was strong at academics. 
-                I would waste my time playing video games. In year 9, my rank was 198/210. But by year 12, I was rank 9, 
-                achieving 99.85 ATAR, and state rank #7 in maths extension 1.  
-              </p>
-              <p>What changed?<br />           <br />
-                
-                The focus. I saw how concepts that I've learnt could connect seamlessly with other ideas. 
-                This development of conceptual understanding extends beyond just mathematics, but for almost all aspects of life.
-                At UNSW, I studied BVisSci/MClinOptom for 3 years, before taking early exit with a final WAM of 92. 
-                I am currently studying Doctor of Medicine at the University of Melbourne, with a 99 percentile GAMSAT.  
-              </p>
+<p>
+        My path to medical school wasn't a straight line of straight A's. I entered Sydney Boys High School as a reserve and, by Year 9, I was ranked <u>198th out of a cohort of 210</u>. I know what it feels like to fall behind, but I also know exactly what it takes to catch up.
+    </p>
+    <p>
+        Over the next three years, I completely restructured my approach to learning. This culminated in a <u>99.85 ATAR</u> and a <u>State Rank (#7)</u> in Mathematics Extension 1.
+    </p>
+    <p>
+        I carried these strategies into my tertiary studies at UNSW, graduating with a <u>92 WAM</u> and a <u>99th percentile score</u> on the GAMSAT. Now a Doctor of Medicine student at the University of Melbourne, I teach these exact systems to help students navigate the HSC and GAMSAT with rigour and confidence.
+    </p>
           </div>
 
 {/* Right side: University Logos Stack */}
