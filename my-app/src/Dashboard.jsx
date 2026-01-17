@@ -53,13 +53,13 @@ function Dashboard() {
           Maths, Chemistry, Physics
         </li>
         <li>
-          GAMSAT (Section 2 & 3)
+          Mock Medical Interviews 
         </li>
         <li>
-          Medical Interview Preparation
+          GAMSAT Section 2 Marking
         </li>
         <li>
-          Mock Interviews
+          GAMSAT Section 3 Preparation
         </li>
       </ul>
     </div>
