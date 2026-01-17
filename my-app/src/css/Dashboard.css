@@ -221,6 +221,72 @@ h3 { font-size: 1.8rem; border-bottom: 2px solid #f25a17; display: inline-block;
   }
 }
 
+
+/* --- Hero Bio Section --- */
+.hero-bio {
+  padding: 50px;
+  border-radius: 12px; /* Smooth corners */
+  max-width: 800px;    /* Prevents text from stretching too wide */
+  margin: 0 auto;      /* Centers the block if it's the only thing */
+  
+  /* Enhanced Glass Morphism Effect */
+  background: rgba(32, 32, 32, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+  /* Enhanced border and shadow */
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+
+  /* Text Styling */
+  color: #f0f0f0;      /* Slightly softer white for better readability */
+  line-height: 1.9;    /* Improved readability of long text */
+  
+  /* Smooth animation */
+  transition: all 0.3s ease;
+}
+
+
+/* Title Styling */
+.hero-bio h3 {
+  color: #ffffff;      /* Pure white as requested */
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+/* Style for the text link */
+.text-link {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.text-link:hover {
+  color: #d94e10; /* Darker orange on hover */
+  border-bottom: 1px solid #d94e10; /* Adds an underline on hover */
+}
+
+/* --- University Logo Styling --- */
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center;    /* Centers them horizontally relative to the container */
+  gap: 20px;              /* Adds space between the top and bottom logo */
+  margin-top: 30px;
+}
+
+.uni-logo {
+  height: 180px; 
+  width: auto;
+  object-fit: contain;
+}
+
 /* --- Teaching Section Layout --- */
 .teaching-section {
   padding: 1px 10px;
@@ -380,56 +446,4 @@ h3 { font-size: 1.8rem; border-bottom: 2px solid #f25a17; display: inline-block;
   .hero-text-box {
     width: 100%;
   }
-}
-
-/* --- Hero Bio Section --- */
-.hero-bio {
-  padding: 40px;
-  border-radius: 6px; /* Smooth corners */
-  max-width: 800px;    /* Prevents text from stretching too wide */
-  margin: 0 auto;      /* Centers the block if it's the only thing */
-  background-color: #202020;
-  opacity: 0.9;
-
-  /* Text Styling */
-  color: white;      /* Light Grey/White for paragraph text (High Contrast) */
-  line-height: 1.8;    /* Improves readability of long text */
-}
-
-/* Title Styling */
-.hero-bio h3 {
-  color: #ffffff;      /* Pure white as requested */
-  font-size: 2.2rem;
-  margin-top: 0;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  display: inline-block;
-}
-
-/* Style for the text link */
-.text-link {
-  text-decoration: none;
-  font-weight: bold;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.text-link:hover {
-  color: #d94e10; /* Darker orange on hover */
-  border-bottom: 1px solid #d94e10; /* Adds an underline on hover */
-}
-
-/* --- University Logo Styling --- */
-.logo-container {
-  display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center;    /* Centers them horizontally relative to the container */
-  gap: 20px;              /* Adds space between the top and bottom logo */
-  margin-top: 30px;
-}
-
-.uni-logo {
-  height: 180px; 
-  width: auto;
-  object-fit: contain;
 }
