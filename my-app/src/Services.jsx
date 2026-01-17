@@ -86,63 +86,6 @@ strong conceptual understanding, followed by tailored practice to reinforce this
 
 
       </div>
-
-      {/* --- Why Choose Me Section (Redesigned) --- */}
-      <div className="why-choose-section">
-        <h2 className="section-heading">Why Choose Me?</h2>
-
-        <div className="reasons-grid">
-          
-          {/* Reason 1 */}
-          <div className="reason-card">
-            <div className="reason-icon">💡</div>
-            <h3>Concepts First</h3>
-            <p>
-              In year 9, I ranked 198/210. By year 12, I was rank 9 with a 99.85 ATAR. 
-              The secret wasn't mindless study; it was a deep desire to understand concepts. 
-              Simple ideas allowed me to derive complex identities with ease and optimise problem-solving during exams.
-            </p>
-          </div>
-
-          {/* Reason 2 */}
-          <div className="reason-card">
-            <div className="reason-icon">🏋️‍♂️</div>
-            <h3>Strategic Practice</h3>
-            <p>
-              Continuous practice reinforces concepts like glue. I provide extensive resources to consolidate understanding:
-            </p>
-            <ul className="material-list">
-              <li>High School Trial Papers</li>
-              <li>Specific Topic Questions</li>
-              <li>Difficult Challenge Questions</li>
-              <li>GAMSAT Materials & Mocks</li>
-              <li>Over 40 Interview Mocks</li>
-            </ul>
-          </div>
-
-          {/* Reason 3 */}
-          <div className="reason-card">
-            <div className="reason-icon">🌱</div>
-            <h3>Adapt & Overcome</h3>
-            <p>
-              I only succeeded at getting into medicine at the very end after initial failures. 
-              Recovering isn't just trying the same path again; it's about trying something different. 
-              I teach the mindset of being open to new experiences and adapting to mistakes to grow.
-            </p>
-          </div>
-        </div>
-
-        {/* New Call to Action Area */}
-        <div className="cta-container">
-          <h3>Ready to Excel?</h3>
-          <p>Spots are strictly limited. Secure your place and start building your foundation today.</p>
-          {/* Adjust the 'to' link to wherever your contact method lives (e.g., email link or contact page) */}
-          <Link to="/contact" className="cta-button main-cta">
-            Enquire About Spots / Book a Trial
-          </Link>
-        </div>
-
-      </div>
     </div>
   );
 }
