@@ -154,7 +154,7 @@ Currently studying Medicine at the University of Melbourne, I teach these exact 
               The available spots I have are listed below:
             </p>
             <ul className="styled-list">
-              <li>Private High School Homework Help -- <strong>Full</strong></li>
+              <li>High School Homework Help -- <strong>Full</strong></li>
               <li>GAMSAT (S2 and S3) -- <strong>3 spots</strong></li>
               <li>Interview Preparation -- <strong>2 spots</strong></li>
             </ul>
