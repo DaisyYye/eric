@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,6 +9,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Dashboard from './Dashboard';
 import Services from './Services';
+import Testimonials from './Testimonials';
 import './css/App.css';
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard/>} />
           <Route path="/services" element={<Services/>} />
+          <Route path="/Why Choose Me?" element={<Testimonials/>} />
         </Routes>
         <Footer />
       </Router>

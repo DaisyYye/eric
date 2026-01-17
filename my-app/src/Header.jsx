@@ -18,6 +18,11 @@ function Header() {
           <span className="desktop-text">My Services</span>
         </Link>
 
+        <Link to="/Why Choose Me?">
+          <span className="mobile-text">Why Me?</span>
+          <span className="desktop-text">Why Choose Me?</span>
+        </Link>
+
       </nav>
     </header>
   );

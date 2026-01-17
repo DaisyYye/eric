@@ -1,0 +1,10 @@
+.agent/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.kiro/
+.roo/
+.shared/
+.trae/
+.windsurf/

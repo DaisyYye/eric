@@ -10,8 +10,7 @@ function Services() {
       <h2 className="page-title">Services</h2>
       <p className="page-intro">
         I provide the following services for private tutoring. I only have limited spots for each, 
-        and so it is important to reach out early. My focus for tutoring is centred around 
-strong conceptual understanding, followed by tailored practice to reinforce this foundation.
+        and so it is important to reach out early.
       </p>
 
       {/* Grid Layout for Services Cards */}
@@ -54,7 +53,7 @@ strong conceptual understanding, followed by tailored practice to reinforce this
             <ul className="pricing-list">
               <li><span>Single Session (1h)</span> <strong>$120</strong></li>
               <li><span>5-Session Bundle</span> <strong>$575</strong></li>
-              <li><span>Essay Marking</span> <strong>$60/paper</strong></li>
+              <li><span>Essay Marking</span> <strong>$50/paper</strong></li>
             </ul>
           </div>
         </div>
