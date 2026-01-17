@@ -55,6 +55,18 @@
   margin: 0;
 }
 
+/* Footer Link Styling */
+.footer-link {
+  color: white;
+  border-bottom: 2px solid #f25a17 !important;
+  transition: all 0.3s ease;
+  display: inline;
+}
+
+.footer-link:hover {
+  color: #f25a17;
+}
+
 /* Link Styling */
 .footer-info a {
   color: white;

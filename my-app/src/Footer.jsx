@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import './css/Footer.css';
 
 const Footer = () => {
@@ -24,15 +25,14 @@ const Footer = () => {
         {/* Right Section: Contact Info */}
         <div className="footer-info">
           <p className="cta-text">
-
-            Interested for a trial? Reach out here, or send me an SMS.</p>
+            Interested for a trial? Reach out <Link to="/contact" className="footer-link">here</Link>, or send me an SMS.</p>
           
           <div className="contact-details">
             <p>
               Phone: <a href="tel:+61426226055">+61 426 226 055</a>
             </p>
             <p>
-              Email: <a href="mailto:eric.y.qin@gmail.com">eric.y.qin@gmail.com</a>
+              Email: <a href="mailto:eric.qin.au@gmail.com">eric.qin.au@gmail.com</a>
             </p>
           </div>
         </div>
