@@ -26,11 +26,6 @@ const Testimonials = () => {
         ], 
          "General Tutoring": [
             {
-                name: "A.",
-                achievement: "94 in Maths Extension 2, 96 in Maths Extension 1",
-                text: "Thank you so much for your help over this year, it has really helped me a lot."
-            },
-            {
                 name: "James",
                 achievement: "Bachelor of Dental Science Honours (UQ)",
                 text: "Eric's tutoring in physiology, anatomy, and chemistry was invaluable throughout my studies. His review sessions and practice questions were highly accurate and closely reflected the style and difficulty of actual assessments, while his detailed feedback ensured I understood exactly how to improve. This approach not only strengthened my knowledge but also boosted my confidence going into exams."
@@ -39,7 +34,12 @@ const Testimonials = () => {
                 name: "Angeline",
                 achievement: "Bachelor of Dental Science Honours (UQ)",
                 text: "Eric was a huge help while I was studying anatomy and physiology. He was great at breaking down complex concepts, talking things through, and making the content feel more manageable. His tutoring influenced my confidence in approaching the content and assessments."
-            }
+            },
+            {
+                name: "A.",
+                achievement: "94 in Maths Extension 2, 96 in Maths Extension 1",
+                text: "Thank you so much for your help over this year, it has really helped me a lot."
+            },
         ]
     };
 

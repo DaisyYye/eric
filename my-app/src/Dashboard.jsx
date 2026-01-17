@@ -79,13 +79,14 @@ function Dashboard() {
             <div className="hero-bio">
               <h3>About me</h3>
 <p>
-        My path to medical school wasn't a straight line of straight A's. I entered Sydney Boys High School as a reserve and, by Year 9, I was ranked <u>198th out of a cohort of 210</u>. I know what it feels like to fall behind, but I also know exactly what it takes to catch up.
+        I went from ranking 198th in my cohort in Year 9 to securing a 99.85 ATAR and a State Rank (#7) in Maths Extension 1.
+      
+      <p>I began tertiary education at UNSW, pursuing Bachelor of Vision Science / Master of Clinical
+Optometry. In 2025, I graduated from BVisSci with a 92 WAM and a 99 percentile GAMSAT. </p>
+
     </p>
     <p>
-        Over the next three years, I completely restructured my approach to learning. This culminated in a <u>99.85 ATAR</u> and a <u>State Rank (#7)</u> in Mathematics Extension 1.
-    </p>
-    <p>
-        I carried these strategies into my tertiary studies at UNSW, graduating with a <u>92 WAM</u> and a <u>99th percentile score</u> on the GAMSAT. Now a Doctor of Medicine student at the University of Melbourne, I teach these exact systems to help students navigate the HSC and GAMSAT with rigour and confidence.
+Currently studying Medicine at the University of Melbourne, I teach these exact systems to help students navigate the HSC and GAMSAT with confidence.
     </p>
           </div>
 
