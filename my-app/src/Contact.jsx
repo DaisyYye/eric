@@ -57,7 +57,7 @@ const Contact = () => {
     <div className="contact-box">
       <div className="contact-container">
         <h2>Get In Touch</h2>
-        <p className="contact-subtitle">Send me a message and I'll respond as soon as possible</p>
+        <p className="contact-subtitle">Send me a message and I'll respond as soon as possible.</p>
 
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="form-group">
