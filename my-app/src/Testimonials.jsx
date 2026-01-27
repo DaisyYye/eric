@@ -46,7 +46,7 @@ const Testimonials = () => {
     return (
         <div className="testimonials-section">
             <div className="testimonials-container">
-                <h1 className="testimonials-title">Student Testimonials</h1>
+                <h2 className="testimonials-title">Student Testimonials</h2>
                 <p className="testimonials-subtitle">Hear what our students have to say about their learning experience.</p>
 
                 {Object.entries(testimonialsData).map((category, idx) => (
