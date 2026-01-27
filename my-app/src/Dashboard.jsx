@@ -7,9 +7,20 @@ import unsw from './assets/unsw.png';
 import unimelb from './assets/unimelb.svg';
 import './css/Dashboard.css';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 function Dashboard() {
   return (
+    <div>
+      <Helmet>
+        <title>GAMSAT Tutor Melbourne & Online | 99th Percentile | Eric Qin</title>
+        <meta 
+          name="description" 
+          content="Private GAMSAT tutoring by UniMelb Doctor of Medicine student. Specialist coaching for Section 2, Section 3 and Interview Preparation." 
+        />
+        <link rel="canonical" href="https://www.eric-qin.com/" />
+      </Helmet>
+
     <div className="dashboard">
       
 {/* --- HERO SECTION --- */}
@@ -79,15 +90,14 @@ function Dashboard() {
             <div className="hero-bio">
               <h3>About me</h3>
 <p>
-        I went from ranking 198th in my cohort in Year 9 to securing a 99.85 ATAR and a State Rank (#7) in Maths Extension 1.
-      
-      <p>I began tertiary education at UNSW, pursuing Bachelor of Vision Science / Master of Clinical
-Optometry. In 2025, I graduated from BVisSci with a 92 WAM and a 99 percentile GAMSAT. </p>
-
-    </p>
-    <p>
-Currently studying Medicine at the University of Melbourne, I teach these exact systems to help students navigate the HSC and GAMSAT with confidence.
-    </p>
+  I went from ranking 198th in my cohort in Year 9 to securing a 99.85 ATAR and a State Rank (#7) in Maths Extension 1.
+</p>
+<p>
+  I began tertiary education at UNSW, pursuing Bachelor of Vision Science / Master of Clinical Optometry. In 2025, I graduated from BVisSci with a 92 WAM and a 99 percentile GAMSAT.
+</p>
+<p>
+  Currently studying Medicine at the University of Melbourne, I teach these exact systems to help students navigate the HSC and GAMSAT with confidence.
+</p>
           </div>
 
 {/* Right side: University Logos Stack */}
@@ -169,6 +179,7 @@ Currently studying Medicine at the University of Melbourne, I teach these exact 
       
       </div>
     </div>
+        </div>
   );
 }
 
