@@ -61,13 +61,9 @@ function Services() {
            <div className="card-description-wrapper">
             <h3>Medical Interview Preparation</h3>
           <p>
-            Before my uni melb offer, I spent 3 years to master medical interviews, learning 
-            what it takes to deliver unique responses to difficult questions and ethical dilemmas. I can help you achieve the same faster than I did.
+           Pursuing medicine requires strong motivation, and an even greater heart. But it isn't easy articulating this motivation. Further, understanding the medical politics, ethics and global health problems can be difficult, and understanding what different universities demand is tricky. Fortunately, I this is where I can be of assistance.
             <br /><br />
-            Materials: Over 40 mocks tailored for UNSW, UoN, WSU, UniMelb, UQ, Bond, plus panel and MMI questions.
-          </p>
-          <p className="disclaimer">
-            (Disclaimer: Materials are original and created by me.)
+            <b>Materials:</b> Over 40 personally made mocks and guides, centred around UNSW, UoN, WSU, CSU, UQ, Bond, UNDS, and general panel and MMI questions.
           </p>
           </div>
           <div className="pricing-box">
