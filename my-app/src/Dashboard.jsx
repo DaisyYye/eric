@@ -3,7 +3,7 @@ import ericPhoto from './assets/eric-photo.jpeg';
 import backgroundImage1 from './assets/background1.jpeg';
 import backgroundImage2 from './assets/background2.jpeg';
 import matchaImage from './assets/matcha.jpeg';
-import unsw from './assets/unsw.png';
+import unsw from './assets/unswlogo.jpg';
 import unimelb from './assets/unimelb.svg';
 import './css/Dashboard.css';
 import { Link } from 'react-router-dom';

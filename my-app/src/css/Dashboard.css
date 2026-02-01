@@ -283,7 +283,7 @@ h3 { font-size: 1.8rem; border-bottom: 2px solid #f25a17; display: inline-block;
 
 .uni-logo {
   height: 180px; 
-  width: auto;
+  width: 180px;
   object-fit: contain;
 }
 
